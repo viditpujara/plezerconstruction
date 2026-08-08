@@ -17,8 +17,8 @@ module.exports = {
         }
       },
       fontFamily:{
-        poppins: ['var(--font-poppins)', ...fontFamily.sans],
-        inter:['var(--font-inter)',...fontFamily.mono]
+        poppins: ['Poppins', 'ui-sans-serif', 'system-ui', ...fontFamily.sans],
+        inter:['Inter', 'ui-monospace', 'SFMono-Regular', ...fontFamily.mono]
       }
     },
   },
