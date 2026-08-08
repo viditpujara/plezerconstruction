@@ -1,5 +1,5 @@
 "use client"
-import Brochure from "@/Assets/pdf/HappyHomesBrochure.pdf"
+import Brochure from "@/assets/pdf/HappyHomesBrochure.pdf"
 import { useState } from "react";
 const BrochureComponent = () => {
     const [isDownloading, setIsDownloading] = useState(false);
@@ -22,7 +22,9 @@ const BrochureComponent = () => {
 
         <div className="flex justify-around items-center m-5 p-4">
             <div className="px-4 py-2 bg-primary rounded-lg hover:scale-105 transform ease-in-out duration-300 text-white text-3xl">
-                <button onClick={handleClick}>Download Brochure</button>
+                <button onClick={handleClick} disabled={isDownloading}>
+                    {isDownloading ? "Downloading..." : "Download Brochure"}
+                </button>
             </div>
         </div>
 
