@@ -26,6 +26,9 @@ const BrochureComponent = () => {
                 <button onClick={handleClick} disabled={isDownloading}>
                     {isDownloading ? "Downloading..." : "Download Brochure"}
                 </button>
+                <button onClick={handleClick} disabled={isDownloading}>
+                    {isDownloading ? "Downloading..." : "Download Brochure"}
+                </button>
             </div>
         </div>
 
